@@ -1,67 +1,56 @@
 {
-  "stac_version": "1.0.0",
+  "stac_version": "1.1.0",
   "stac_extensions": [
-    "https://stac-extensions.github.io/template/v1.0.0/schema.json"
+    "https://rs-python.github.io/auxip-stac-extension/v1.0.0/schema.json",
+    "https://stac-extensions.github.io/file/v2.1.0/schema.json",
+    "https://stac-extensions.github.io/timestamps/v1.1.0/schema.json"
   ],
   "type": "Feature",
-  "id": "item",
-  "bbox": [
-    172.9,
-    1.3,
-    173,
-    1.4
-  ],
-  "geometry": {
-    "type": "Polygon",
-    "coordinates": [
-      [
-        [
-          172.9,
-          1.3
-        ],
-        [
-          173,
-          1.3
-        ],
-        [
-          173,
-          1.4
-        ],
-        [
-          172.9,
-          1.4
-        ],
-        [
-          172.9,
-          1.3
-        ]
-      ]
-    ]
-  },
+  "id": "S1A_AUX_PP1_V20140616T133500_G20241125T133808",
+  "collection": "S1-AUX_PP1",
+  "geometry": null,
   "properties": {
-    "datetime": "2020-12-11T22:38:32Z",
-    "template:new_field": "test",
-    "template:xyz": {
-      "x": 1,
-      "y": 2,
-      "z": 3
-    },
-    "template:another_one": [
-      1,
-      2,
-      3
-    ]
+    "datetime": "2014-06-16T13:35:00.000000Z",
+    "created": "2024-11-25T13:42:57.763000Z",
+    "start_datetime": "2014-06-16T13:35:00.000000Z",
+    "end_datetime": "2014-06-16T13:35:00.000000Z",
+    "platform": "sentinel-1a",
+    "constellation": "sentinel-1",
+    "auxip:id": "2e25ea88-ab33-11ef-8630-fa163e75e309",
+    "published": "2024-11-25T13:42:57.763000Z",
+    "product:type": "AUX_PP1",
+    "processing:datetime": "2024-11-25T13:38:08.000000Z",
+    "processing:facility": "CLS-Brest"
+  },
+  "assets": {
+    "S1A_AUX_PP1_V20140616T133500_G20241125T133808.SAFE.zip": {
+      "href": "https://auxip.copernicus.eu/odata/v1/Products(2e25ea88-ab33-11ef-8630-fa163e75e309)/$value",
+      "type": "application/octet-stream",
+      "file:size": 30891,
+      "file:checksum": "7866557ed8cbeac83225459eb3bd7438",
+      "eviction_datetime": "2027-08-22T13:42:58.405000Z"
+    }
   },
   "links": [
     {
-      "href": "https://example.com/examples/item.json",
-      "rel": "self"
+      "rel": "collection",
+      "type": "application/json",
+      "href": "https://auxip-stac.example.com/auxip/collections/S1-AUX_PP1"
+    },
+    {
+      "rel": "parent",
+      "type": "application/json",
+      "href": "https://auxip-stac.example.com/auxip/collections/S1-AUX_PP1"
+    },
+    {
+      "rel": "root",
+      "type": "application/json",
+      "href": "https://auxip-stac.example.com/auxip/"
+    },
+    {
+      "rel": "self",
+      "type": "application/geo+json",
+      "href": "https://auxip-stac.example.com/auxip/collections/S1-AUX_PP1/items/S1A_AUX_PP1_V20140616T133500_G20241125T133808"
     }
-  ],
-  "assets": {
-    "data": {
-      "href": "https://example.com/examples/file.xyz",
-      "template:new_field": "test"
-    }
-  }
+  ]
 }
