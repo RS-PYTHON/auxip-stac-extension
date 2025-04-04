@@ -16,4 +16,19 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Fixed
 
-[Unreleased]: <https://github.com/stac-extensions/template/compare/v1.0.0...HEAD>
+[Unreleased]: <https://github.com/RS-PYTHON/auxip-stac-extension/compare/v1.1.0...HEAD>
+
+## [v1.1.0] - 2025-04-04
+
+### Changed
+
+- Changed domain to home.rs-python.eu to avoid HTTP redirection causing CORS issue in stac-browser
+
+## [v1.0.0] - 2025-03-31
+
+### Added
+
+- Initial version
+
+[v1.1.0]: <https://github.com/RS-PYTHON/auxip-stac-extension/tree/v1.1.0>
+[v1.0.0]: <https://github.com/RS-PYTHON/auxip-stac-extension/tree/v1.0.0>
